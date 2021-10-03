@@ -22,7 +22,7 @@ Seeing DQ’s performance from 2017 to 2018, it could be said that this company’s 
 
 ### Original Code and its execution time
 
-In the original code, we create a loop that goes from row 2 to row end to calculate total volume traded and percentage change in price for each ticker. Since, this loop is nested within the loop that goes from ticker (0) to ticker (11) the computer goes over all the rows in worksheet 2017 or 2018 each time it performs calculations for individual ticker. Furthermore, since we are printing the output calculations in “All Stocks Analysis “worksheet, it jumps from worksheet 2017 or 2018 to print the outcome in Analysis worksheet and goes back to worksheet 2017 or 2018 to repeat the process for next ticker. While, it was great for Steve to see the results so quickly using our code, this code will take much longer time when applied to entire stock market. 
+In the original code, we created a loop that goes from row 2 to row end to calculate total volume traded and percentage change in price for each ticker. Since, this loop is nested within the loop that goes from ticker (0) to ticker (11) the computer goes over all the rows in worksheet 2017 or 2018 each time it performs calculations for individual ticker. Furthermore, since we are printing the output calculations in “All Stocks Analysis “worksheet, it jumps from worksheet 2017 or 2018 to print the outcome in Analysis worksheet and goes back to worksheet 2017 or 2018 to repeat the process for next ticker. While, it was great for Steve to see the results so quickly using our code, this code will take much longer time when applied to entire stock market. 
 
 ![All Stocks Analysis Code](https://github.com/vedikanigam/stock-analysis/blob/main/Resources/AllStocksAnalysis_Code.png)
 
@@ -35,3 +35,25 @@ The execution time for this code was 0.84375 seconds for the year 2017 and 0.820
 
 
 ### Refactored Code and its execution time
+
+In the refactored code, we go over all the rows only once. As we proceed from one ticker to next, we increment the ticker index by 1 and save the results in an output array in the location for corresponding ticker.  This output array is used later to print results in “All Stocks Analysis” worksheet.
+
+![All Stocks Analysis Refactored Code](https://github.com/vedikanigam/stock-analysis/blob/main/Resources/AllStocksAnalysisFactored_Code.png)
+
+
+The execution time for this code was 0.140625 seconds for the year 2017 and 0.1328125 seconds for the year 2018.
+
+
+![All Stocks Analysis 2017 Refactored Code Runtime](https://github.com/vedikanigam/stock-analysis/blob/main/Resources/AllStocksAnalysis2017RefactoredCode_Runtime.png)
+
+
+![All Stocks Analysis 2018 Refactored Code Runtime] (https://github.com/vedikanigam/stock-analysis/blob/main/Resources/AllStocksAnalysis2018RefactoredCode_Runtime.png)
+
+
+## Summary
+
+We can conclude from this exercise that refactoring our code helped in reducing the runtime of this code by over 75%. This is especially helpful when datasets are large and longer runtime of code will delay our results. However, refactoring requires a programmer to invest time to make the code efficient and cleaner. Therefore in some cases it may be more time intensive to refactor code and may not be worth the extra effort.
+
+In the refactored code for this exercise we saved time in running the code and when applied to entire stock market it will be especially useful. However, it took some time to refactor this code. It may have been better to come up with the refactored code in the beginning itself. 
+
+
