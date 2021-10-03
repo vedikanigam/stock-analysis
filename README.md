@@ -47,12 +47,12 @@ The execution time for this code was 0.140625 seconds for the year 2017 and 0.13
 ![All Stocks Analysis 2017 Refactored Code Runtime](https://github.com/vedikanigam/stock-analysis/blob/main/Resources/AllStocksAnalysis2017RefactoredCode_Runtime.png)
 
 
-![All Stocks Analysis 2018 Refactored Code Runtime] (https://github.com/vedikanigam/stock-analysis/blob/main/Resources/AllStocksAnalysis2018RefactoredCode_Runtime.png)
+![All Stocks Analysis 2018 Refactored Code Runtime](https://github.com/vedikanigam/stock-analysis/blob/main/Resources/AllStocksAnalysis2018RefactoredCode_Runtime.png)
 
 
 ## Summary
 
-We can conclude from this exercise that refactoring our code helped in reducing the runtime of this code by over 75%. This is especially helpful when datasets are large and longer runtime of code will delay our results. However, refactoring requires a programmer to invest time to make the code efficient and cleaner. Therefore in some cases it may be more time intensive to refactor code and may not be worth the extra effort.
+We can conclude from this exercise that refactoring our code helped in reducing the runtime of this code by over 75%. This is especially helpful when datasets are large and longer runtime of code will delay our results. However, refactoring requires a programmer to invest time to make the code efficient and cleaner. Therefore, in some cases it may be more time intensive to refactor code and may not be worth the extra effort.
 
 In the refactored code for this exercise we saved time in running the code and when applied to entire stock market it will be especially useful. However, it took some time to refactor this code. It may have been better to come up with the refactored code in the beginning itself. 
 
